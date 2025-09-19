@@ -1,0 +1,23 @@
+{
+  "name": "Transliterasi Pegon",
+  "short_name": "Pegon",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#282c34",
+  "theme_color": "#282c34",
+  "description": "Aplikasi transliterasi Latin Jawa ke Arab Pegon.",
+  "icons": [
+    {
+      "src": "https://www.gstatic.com/android/keyboard/emojikitchen/20201001/u1f4d
+      a/u1f4da_u1f4dd.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://www.gstatic.com/android/keyboard/emojikitchen/20201001/u1f4d
+      a/u1f4da_u1f4dd.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

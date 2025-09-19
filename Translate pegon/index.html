@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transliterasi Latin ke Pegon</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Translate Latin Jawa ke Arab Pegon</h1>
+        <p class="subtitle">Dibuat Oleh Abdul Latief Munir </p>
+        
+        <div class="input-area">
+            <label for="latinInput">Masukkan Teks Latin:</label>
+            <textarea id="latinInput" rows="5" placeholder="Contoh: bapak tindak menyang pasar..."></textarea>
+        </div>
+        
+        <div class="output-area">
+            <label for="pegonOutput">Hasil Transliterasi Pegon:</label>
+            <div id="pegonOutput" class="pegon-font" dir="rtl"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+              console.log('ServiceWorker pendaftaran berhasil');
+            })
+            .catch(err => {
+              console.log('ServiceWorker pendaftaran gagal: ', err);
+            });
+        });
+      }
+    </script>
+</body>
+</html>
