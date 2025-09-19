@@ -4,8 +4,8 @@ const urlsToCache = [
   '/index.html',
   '/style.css',
   '/script.js',
-  '/icons/icon-192.png', // 
-  '/icons/icon-512.png'  // 
+  '/icon-192.png', // 
+  '/icon-512.png'  // 
 ];
 
 // Instalasi Service Worker dan caching file
@@ -30,4 +30,5 @@ self.addEventListener('fetch', event => {
         return fetch(event.request); // Mengambil dari jaringan jika tidak ada di cache
       })
   );
+
 });
